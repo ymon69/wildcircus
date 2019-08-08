@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="The best circus company in the world" />
+    <title>Wild Circus</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Wild Circus</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#Performances">Performances</a></li>
+                <li><a href="#About_Us">About Us</a></li>
+                <li><a href="#Prices">Prices</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr />
+
+
+
+    <section class="carousel">
+<div class="img">
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+<hr/>
+
+    <section>
+        <h2 class="performances" data-aos="zoom-in-up">Performances</h2>
+
+        <ul>
+            <li data-aos="flip-left">
+                <h3>Laugh</h3>
+                <p>
+                    As an adult, come and discover our irresistible clowns, between practical jokes and pranks let
+                    yourself be carried away by their joy and fall back into childhood.
+                </p>
+            </li>
+
+            <li data-aos="flip-down">
+                <h3>Dream</h3>
+                <p>
+                    Let yourself be carried away in a world where the real and the imaginary are one, in the company of
+                    our talented magicians, discover a wonderful world limited only by your imagination.
+                </p>
+            </li>
+
+            <li data-aos="flip-right">
+
+                <h3>Marvel at</h3>
+                <p>
+                    Tame the untameable in the company of our tamers, between roar and razor-sharp claws, watch these
+                    fierce felines turn into sweet kittens.
+                </p>
+            </li>
+        </ul>
+    </section>
+    <hr />
+    <section>
+        <h2 id="About_Us" data-aos="zoom-in-up">About Us</h2>
+        <p class="card" data-aos="zoom-in">
+            Leon wild, created the wild circus in 1867 in London, his dream were to create the best circus company in
+            the world by entertaning peoples with fierce animals, clowns and dancers. From now, the company try her best
+            to take care of this legacy and make
+            his dream be true.
+        </p>
+    </section>
+    <hr />
+    <section>
+        <h2 id="Prices" data-aos="zoom-in-up">Prices</h2>
+
+        <div class="box card" data-aos="zoom-out-down">
+            <div class="raw">
+                <div class="col textCenter">adultes</div>
+                <div class="col textCenter">kids under 12 years</div>
+                <div class="col textCenter">Groups (more than 10 persons)</div>
+                <div class="col textCenter">school weeks out of wednesday</div>
+                <div class="col textCenter">week-end and wednesday</div>
+            </div>
+            <div class="raw ">
+                <div class="col ">23€</div>
+                <div class="col ">12€</div>
+                <div class="col ">200€/10persons</div>
+                <div class="col ">20€</div>
+                <div class="col ">23€</div>
+            </div>
+            <div class="raw">
+                <div class="col raichu">Free for kids under 2 years</div>
+
+
+            </div>
+
+        </div>
+
+
+
+        </div>
+    </section>
+
+    <hr />
+    <section>
+        <h2 id="Contact" data-aos="fade-up" data-aos-duration="3000">Contact Us</h2>
+        <div class="card salameche">
+
+            <form id="contact">
+                <p>
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" tabindex="1" />
+                </p>
+                <p>
+                    <label for="prénom">Prénom:</label><input type="text" id="prénom" name="prénom" tabindex="1" />
+                </p>
+                <p>
+                    <label for="email">Email :</label><input type="text" id="email" name="email" tabindex="2" />
+                </p>
+
+                <p>
+                    <label for="message">Message :</label><textarea id="message" name="message" tabindex="4" cols="50"
+                        rows="8"></textarea>
+                </p>
+                <label for="condition"> J'accepte les conditions</label>
+                <input type="checkbox" id="condition" />
+                <div style="text-align:center;">
+                    <input type="submit" name="envoi" value=" Envoyer " id="submit" />
+                </div>
+
+            </form>
+            <script>
+                const email = document.getElementById("email")
+
+                const submit = document.getElementById("submit")
+
+                submit.addEventListener("click", (event) => {
+
+                    event.preventDefault()
+
+                    email.style["background"] = "white"
+
+                    const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+                    const valid = regex.test(email.value)
+
+                    if (valid === false) {
+
+                        email.style["background"] = "pink"
+                    }
+                    console.log(valid)
+
+                })
+
+
+
+
+
+            </script>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9975.883049110887!2d4.903208718786645!3d45.75180025032245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sfr!2sfr!4v1565016152093!5m2!1sfr!2sfr"
+                width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+        </div>
+
+    </section>
+    <footer>
+        <p>
+            Wild Circus by [SEDIRI Aymen] - France-IOI: [<a
+                href="http://www.france-ioi.org/user/perso.php?sLogin=ymon69" target="blank">France-IOI profile</a> -
+            SoloLearn: [<a href="https://www.sololearn.com/Profile/14808380" target="blank">Sololearn profil</a> ] -
+            <a href="https://wildcodeschool.fr" target="blank">Wild Code School</a> - [21/07/2019]
+        </p>
+
+    </footer>
+</body>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="carousel.js"></script>
+</html>
